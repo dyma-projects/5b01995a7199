@@ -8,7 +8,6 @@ export class ColorDirective {
   @HostBinding('style.color') hColor: string;
   @HostListener('window:keyup', ['$event'])
   keyUp(event) {
-    console.log(event.key);
     switch (event.key) {
       case 'ArrowUp':
         this.hColor = 'red';
